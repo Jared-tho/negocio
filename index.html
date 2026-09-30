@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Mi Negocio</title>
+</head>
+<body>
+
+  <header>
+    <h2>Mi Negocio</h2>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+
+    <!-- INICIO -->
+    <section id="inicio">
+      <h1>Hola Internet</h1>
+      <p>Este es mi sitio.</p>
+      <blockquote>
+        <p>Resumen negocio</p>
+      </blockquote>
+      <p>
+        <a href="#contacto"><strong>Escríbeme</strong></a> |
+        <a href="#servicios">Ver servicios</a>
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- TARJETAS -->
+    <section id="servicios">
+      <h2>Servicios</h2>
+
+      <fieldset>
+        <legend><strong>Primer servicio</strong></legend>
+        <p> frase </p>
+        <ul>
+          <li>Característica uno</li>
+          <li>Característica dos</li>
+        </ul>
+        <p><strong>Desde Bs 100</strong></p>
+        <button type="button">Lo quiero</button>
+      </fieldset>
+      <br>
+
+      <fieldset>
+        <legend><strong>Segundo servicio</strong></legend>
+        <p>problema.</p>
+        <ul>
+          <li>Característica uno</li>
+          <li>Característica dos</li>
+        </ul>
+        <p><strong>Desde Bs 1.70</strong></p>
+        <button type="button">Lo quiero</button>
+      </fieldset>
+      <br>
+
+    </section>
+
+    <hr>
+
+    <!-- TABLA DE PRECIOS -->
+    <section id="precios">
+      <h2>Precios</h2>
+      <table border="1" cellpadding="8" cellspacing="0" width="100%">
+        <caption>Lista de precios</caption>
+        <thead>
+          <tr>
+            <th scope="col">Servicio</th>
+            <th scope="col">Duración</th>
+            <th scope="col">Incluye</th>
+            <th scope="col">Precio (Bs)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Primer servicio</th>
+            <td>1 hora</td>
+            <td>Característica uno y dos</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th scope="row">Segundo servicio</th>
+            <td>2 horas</td>
+            <td>Característica uno y dos</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <th scope="row">Tercer servicio</th>
+            <td>1 día</td>
+            <td>Característica uno y dos</td>
+            <td>500</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4"><small>Los precios pueden cambiar sin previo aviso.</small></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr>
+
+    <hr>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section id="preguntas">
+      <h2>Preguntas frecuentes</h2>
+
+      <details>
+        <summary>¿Cómo puedo pagar?</summary>
+        <p>Aceptamos efectivo, transferencia y QR.</p>
+      </details>
+      <details>
+        <summary>¿Hacen entregas a domicilio?</summary>
+        <p>Sí, coordinamos según tu zona.</p>
+      </details>
+      <details>
+        <summary>¿Puedo cambiar mi reserva?</summary>
+        <p>Sí, avísanos con un día de anticipación.</p>
+      </details>
+    </section>
+
+    <hr>
+
+    <!-- FORMULARIO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Quieres saber más? Llena el formulario y te respondemos lo antes posible.</p>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Tus datos</legend>
+          <p>
+            <label for="nombre">Nombre completo</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Juan Pérez" required>
+          </p>
+          <p>
+            <label for="correo">Correo electrónico</label><br>
+            <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+          </p>
+          <p>
+            <label for="telefono">Teléfono</label><br>
+            <input type="tel" id="telefono" name="telefono" placeholder="70000000">
+          </p>
+          <p>
+            <label for="nacimiento">Fecha de nacimiento</label><br>
+            <input type="date" id="nacimiento" name="nacimiento">
+          </p>
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend>Tu consulta</legend>
+          <p>
+            <label for="servicio">Servicio de interés</label><br>
+            <select id="servicio" name="servicio">
+              <option value="">Elige una opción</option>
+              <option value="1">Primer servicio</option>
+              <option value="2">Segundo servicio</option>
+              <option value="3">Tercer servicio</option>
+            </select>
+          </p>
+
+          <p>Forma de contacto preferida:</p>
+          <p>
+            <input type="radio" id="por-correo" name="contacto" value="correo" checked>
+            <label for="por-correo">Correo</label>
+            <input type="radio" id="por-telefono" name="contacto" value="telefono">
+            <label for="por-telefono">Llamada</label>
+            <input type="radio" id="por-whatsapp" name="contacto" value="whatsapp">
+            <label for="por-whatsapp">WhatsApp</label>
+          </p>
+
+          <p>
+            <label for="presupuesto">Presupuesto aproximado (Bs)</label><br>
+            <input type="range" id="presupuesto" name="presupuesto" min="100" max="1000" step="50" value="300">
+          </p>
+
+          <p>
+            <label for="mensaje">Mensaje</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Cuéntanos qué necesitas"></textarea>
+          </p>
+
+          <p>
+            <label for="archivo">Adjuntar archivo (opcional)</label><br>
+            <input type="file" id="archivo" name="archivo">
+          </p>
+        </fieldset>
+        <br>
+
+        <p>
+          <input type="checkbox" id="boletin" name="boletin" value="si">
+          <label for="boletin">Quiero recibir novedades y ofertas.</label>
+        </p>
+        <p>
+          <input type="checkbox" id="terminos" name="terminos" value="si" required>
+          <label for="terminos">Acepto los términos y condiciones.</label>
+        </p>
+
+        <p>
+          <button type="submit">Enviar mensaje</button>
+          <button type="reset">Limpiar</button>
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <hr>
+
+  <footer>
+    <p>
+      <a href="#inicio">Volver arriba</a>
+    </p>
+    <small>&copy; 2026 Mi Negocio. Todos los derechos reservados.</small>
+  </footer>
+
+</body>
+</html>
