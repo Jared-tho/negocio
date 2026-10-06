@@ -55,7 +55,7 @@ header nav a:hover {
 
 /* PRimera Seccion  */
 #inicio {
-  background: linear-gradient(180deg, #f0fdfa, #ccfbf1);
+  background: #f0fdfa;
   text-align: center;
   padding: 4rem 1.5rem;
 }
