@@ -104,3 +104,47 @@ header nav a:hover {
   border-color: #134e4a;
   color: #ffffff;
 }
+
+/* Móvil pequeño: botones a ancho completo */
+@media (max-width: 480px) {
+  #inicio a {
+    display: block;
+    margin: 0.5rem auto;
+    max-width: 280px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    padding: 0.9rem 2rem;
+  }
+
+  header h2 {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
+  #inicio {
+    padding: 4rem 1.5rem;
+  }
+
+  .contenedor-tarjetas {
+    gap: 25px;
+    padding: 1.5rem;
+  }
+
+  article {
+    flex: 1 1 300px;
+    max-width: 400px;
+  }
+}
+
+/* Escritorio */
+@media (min-width: 1200px) {
+  .contenedor-tarjetas {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
