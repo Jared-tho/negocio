@@ -144,49 +144,45 @@ header nav a:focus-visible {
 /*? Modo Oscuro  */
 /* Clase que cambia solo el fondo */
 body.oscuro {
-  background-color: #121212;
+  background-color: #090d16;
 }
-
-/* Cabecera en Modo Oscuro */
+/* Cabecera */
 body.oscuro header {
-  background: #0f172a;
+  background: #140507;
 }
 
 body.oscuro header nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 42, 85, 0.2);
 }
 
-/* Sección Inicio en Modo Oscuro */
+/* Sección Inicio */
 body.oscuro #inicio {
-  background: #1e293b;
+  background: #220a0e;
+  color: #e2cbd0;
 }
 
 body.oscuro #inicio h1 {
-  color: #2dd4bf;
-}
-
-body.oscuro #inicio  {
-  color: #94a3b8;
+  color: #ff2a55;
 }
 
 body.oscuro #inicio blockquote {
-  background: #0f172a;
-  color: #e2e8f0;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  background: #310e14;
+  color: #fff0f3;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.55);
 }
 
 body.oscuro #inicio a {
-  border-color: #14b8a6;
-  color: #14b8a6;
+  border-color: #ff2a55;
+  color: #ff2a55;
 }
 
 body.oscuro #inicio a:first-child {
-  background-color: #14b8a6;
-  color: #0f172a;
+  background-color: #ff2a55;
+  color: #ffffff;
 }
 
 body.oscuro #inicio a:hover {
-  background-color: #2dd4bf;
-  border-color: #2dd4bf;
-  color: #0f172a;
+  background-color: #d90429;
+  border-color: #d90429;
+  color: #ffffff;
 }
