@@ -6,6 +6,7 @@
 body {
   background-color: #f5f5f5;
   font-family: "Nunito", sans-serif;
+  transition: background-color 0.3s ease;
 }
 
 /* Cabecera ojk */
@@ -51,6 +52,22 @@ header nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-1px);
   outline: none;
+}
+
+#theme-d {
+  background: transparent;
+  border: 1px solid currentColor;
+  padding: 5px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+#theme-d:hover {
+  opacity: 0.8;
 }
 
 /* PRimera Seccion  */
@@ -103,4 +120,54 @@ header nav a:hover {
   background-color: #134e4a;
   border-color: #134e4a;
   color: #ffffff;
+}
+
+/*? Modo Oscuro  */
+/* Clase que cambia solo el fondo */
+body.oscuro {
+  background-color: #121212;
+}
+
+/* Cabecera en Modo Oscuro */
+body.oscuro header {
+  background: #0f172a;
+}
+
+body.oscuro header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sección Inicio en Modo Oscuro */
+body.oscuro #inicio {
+  background: #1e293b;
+}
+
+body.oscuro #inicio h1 {
+  color: #2dd4bf;
+}
+
+body.oscuro #inicio  {
+  color: #94a3b8;
+}
+
+body.oscuro #inicio blockquote {
+  background: #0f172a;
+  color: #e2e8f0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+body.oscuro #inicio a {
+  border-color: #14b8a6;
+  color: #14b8a6;
+}
+
+body.oscuro #inicio a:first-child {
+  background-color: #14b8a6;
+  color: #0f172a;
+}
+
+body.oscuro #inicio a:hover {
+  background-color: #2dd4bf;
+  border-color: #2dd4bf;
+  color: #0f172a;
 }
