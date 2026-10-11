@@ -17,7 +17,15 @@
 
   <header>
     <h2>JAREDTO servicios</h2>
-    <nav aria-label="Principal">
+
+    <button id="menu-toggle" class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+      aria-controls="menu-principal">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="menu-principal" aria-label="Principal">
       <ul>
         <li>
           <button id="theme-d" type="button">🌙 Modo oscuro</button>
@@ -27,7 +35,6 @@
         <li><a href="#precios">Precios</a></li>
         <li><a href="#preguntas">Preguntas</a></li>
         <li><a href="#contacto">Contacto</a></li>
-
       </ul>
     </nav>
   </header>
@@ -124,8 +131,6 @@
 
     <hr>
 
-    <hr>
-
     <!-- PREGUNTAS FRECUENTES -->
     <section id="preguntas">
       <h2>Preguntas frecuentes</h2>
@@ -183,7 +188,7 @@
               <option value="1">Primer servicio</option>
               <option value="2">Segundo servicio</option>
               <option value="3">Tercer servicio</option>
-            </select>`
+            </select>
           </p>
 
           <p>Forma de contacto preferida:</p>
