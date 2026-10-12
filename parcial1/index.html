@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AXON</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <header id="inicio">
+    <h1>AXON</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <p>Brindamos servicios técnicos, soporte IT, telecomunicaciones, reparación de impresoras, limpieza preventiva de equipos y soporte de personal.</p>
+      <ul>
+        <li>Soporte IT - Bs 150</li>
+        <li>Reparación de impresoras - Bs 200</li>
+        <li>Limpieza preventiva de equipos - Bs 100</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="form-contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="consulta">Consulta</label>
+        <input type="text" id="consulta" name="consulta">
+      </form>
+      <button type="button" id="btn-enviar">Enviar</button>
+      <p id="mensaje"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Jared Aguirre Rosas- AXON SERVICIOS @2026</p>
+  </footer>
+
+  <script src="script.js"></script>
 
 </body>
 
