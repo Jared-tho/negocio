@@ -56,9 +56,12 @@ section {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+section p {
+  padding-left: 10px;
+}
 
 ul {
-  padding-left: 20px;
+  padding-left: 30px;
   margin-top: 12px;
 }
 
@@ -110,6 +113,7 @@ button {
   font-size: 14px;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
+  box-shadow: 6px 5px 4px rgba(0, 0, 0, 5);
 }
 
 /* Footer */
