@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de contacto</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+    label { display: block; margin-top: 14px; font-weight: bold; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; }
+    button { margin-top: 18px; padding: 10px 20px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Contáctame</h1>
+
+  <form method="POST" action="procesar.php">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="servicio">Tipo de servicio</label>
+    <select id="servicio" name="servicio" required>
+      <option value="">-- Selecciona una opción --</option>
+      <option value="Técnico">Técnico</option>
+      <option value="Mantenimiento">Mantenimiento</option>
+      <option value="Cámaras">Cámaras</option>
+    </select>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
